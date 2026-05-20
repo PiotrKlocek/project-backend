@@ -1,0 +1,31 @@
+{
+  "name": "simple-shop-backend",
+  "version": "1.0.0",
+  "description": "Simple shop backend API for SonarCloud assignment",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "nodemon": "^3.1.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  }
+}
